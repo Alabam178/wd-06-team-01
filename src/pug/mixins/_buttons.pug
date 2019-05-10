@@ -1,2 +1,14 @@
 mixin button(text, link)
-	a(class="button" href= link)&attributes(attributes) #{text}
+	a(class="button" href = link)&attributes(attributes) #{text}
+
+mixin button-normal(text, link)
+	div(class="button-normal")&attributes(attributes) #{text}
+
+mixin buttons-hf(text, link)
+	a(class="buttons-hover-focus")&attributes(attributes) #{text}
+
+mixin buttons-active(text, link)
+	a(class="buttons-active")&attributes(attributes) #{text}
+
+mixin buttons-small(text, link)
+	div(class="buttons-small")&attributes(attributes) #{text}

@@ -1,0 +1,92 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.main-wrapper
+		.container.container--left.user-content.pt-35
+			h1 Кнопки
+			
+			.row
+				.section-ui
+					.buttons-text Normal
+					.buttons-normal
+						.buttons-normal1
+							+button-normal('Вперед ➔', '#!')
+						.buttons-normal2
+							+button-normal('Подробнее', '#!')
+						.buttons-normal3
+							+button-normal('Редактировать', '#!')
+						.buttons-normal4
+							+button-normal('Удалить', '#!')
+						.buttons-normal5
+							+button-normal('Сохранить', '#!')
+						.buttons-normal6
+							+button-normal('Войти', '#!')
+						.buttons-normal7
+							+button-normal('Профиль', '#!')
+				
+				.section-ui
+					.buttons-text Hover, Focus
+					.buttons-hf
+						.buttons-hf1
+							+buttons-hf('Вперед ➔', '#!')
+						.buttons-hf2
+							+buttons-hf('Подробнее', '#!')
+						.buttons-hf3
+							+buttons-hf('Редактировать', '#!')
+						.buttons-hf4
+							+buttons-hf('Удалить', '#!')
+						.buttons-hf5
+							+buttons-hf('Сохранить', '#!')
+						.buttons-hf6
+							+buttons-hf('Войти', '#!')
+						.buttons-hf7
+							+buttons-hf('Профиль', '#!')
+				
+				.section-ui
+					.buttons-text Active
+					.buttons-active
+						.buttons-active1
+							+buttons-active('Вперед ➔', '#!')
+						.buttons-active2
+							+buttons-active('Подробнее', '#!')
+						.buttons-active3
+							+buttons-active('Редактировать', '#!')
+						.buttons-active4
+							+buttons-active('Удалить', '#!')
+						.buttons-active5
+							+buttons-active('Сохранить', '#!')
+						.buttons-active6
+							+buttons-active('Войти', '#!')
+						.buttons-active7
+							+buttons-active('Профиль', '#!')
+
+			h1 Кнопки - малого размера
+			h4 Каждая кнопка может быть представлена в малом размере.
+			
+			.row
+				.section-ui
+					.buttons-small
+						.buttons-small1
+							+buttons-small('Удалить', '#!')
+						.buttons-small2
+							+buttons-small('Сохранить', '#!')
+						.buttons-small3
+							+buttons-small('Редактировать', '#!')
+						.buttons-small4
+							+buttons-small('Подробнее', '#!')
+
+			pre.
+				+button-normal('Текст кнопки', '#!')
+				+button-hf('Текст кнопки', '#!')
+				+button-active('Текст кнопки', '#!')
+				+button-small('Текст кнопки', '#!')
+
+			
+			.title pages/buttons.pug
+			pre.
+
+				
